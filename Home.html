@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbutton {
+            color: white;
+            background-color: transparent;
+            border: none;
+            margin-right: 15px;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            background-color: rgb(18, 73, 110);
+            padding: 30px;;
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .search input{
+            width: 30%;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+        }
+
+        #hotdeals {
+            margin-left: 30px;
+            font-size: 22px;
+            color: rgb(253, 254, 255);
+        }
+        
+        .list-container {
+            display: flex;
+            padding: 30px;
+            gap: 20px;
+        }
+
+        .list {
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            padding: 10px 15px 10px 5px;
+            background-color: white;
+            overflow: hidden;
+            width: 300px;
+
+        }
+
+        main {
+            display: block;
+            height: 75vh;
+            background-image: url(https://www.shutterstock.com/image-photo/white-passenger-airplane-flying-sky-600nw-2331577059.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .list img {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .details{
+            padding: 15px;
+        }
+
+        .stars{
+            color: gold;
+            font-size: 20px;
+            margin: 5px 0;
+        }
+
+        .title-price{
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .review{
+            font-size: 14px;
+            color: gray;
+        }
+
+        footer {
+            background-color: rgb(18, 73, 110);
+            color: white;
+            display: flex;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .footerbutton a{
+            justify-content: space-evenly;
+            padding: 30px;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbutton">
+            Logo
+        </div>
+        <div>
+            <a href="#" class="navbutton">Menu</a>
+            <a href="#" class="navbutton">Promotion</a>
+            <a href="#" class="navbutton">Contact</a>
+            <a href="#" class="navbutton">Welcome, Name</a>
+        </div>
+    </nav>
+    <main>
+        <div class="search">
+            <input type="text" placeholder="ค้นหา โรงแรม">
+        </div>
+        <p id="hotdeals">Hot Deals</p>
+        <div class="list-container">
+            <div class="list">
+                <img src="https://pix10.agoda.net/hotelImages/4363456/-1/a71d6ad4d29b2527b9bb824c6116cdf9.jpg?ca=12&ce=1&s=414x232"
+                    alt="Narra Hotel">
+                <div class="details">
+                    <div class="title-price">
+                        <span>NARRA Hotel</span>
+                        <span>1540 บ./คืน</span>
+                    </div>
+                    <p class="stars">★★★★★</p>
+                    <p class="review">Lasted Review</p>
+                    <p class="review">From.. Email <br> Good and Nice</p>
+                </div>
+            </div>
+
+            <div class="list">
+                <img src="https://www.ahstatic.com/photos/a8f4_ho_00_p_1024x768.jpg" alt="ibis Hotel">
+                <div class="details">
+                    <div class="title-price">
+                        <span>ibis Hotel</span>
+                        <span>2000 บ./คืน</span>
+                    </div>
+                    <p class="stars">★★★★★</p>
+                    <p class="review">Lasted Review</p>
+                    <p class="review">From.. Email <br> Good and Nice</p>
+                </div>
+            </div>
+
+            <div class="list">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCi7yYydwJteABcCc_Fee7V2BVREEnWWl4Ag&s"
+                    alt="">
+                    <div class="details">
+                        <div class="title-price">
+                            <span>Golden Hotel</span>
+                            <span>4350 บ./คืน</span>
+                        </div>
+                        <p class="stars">★★★★★</p>
+                        <p class="review">Lasted Review</p>
+                        <p class="review">From.. Email <br> Good and Nice</p>
+                    </div>
+            </div>
+
+            <div class="list">
+                <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/440088201.jpg?k=c5f81cb6950effe90555467cf60c16e9b8050ec5838f5cea113989827e929c01&o="
+                    alt="Water Hotel">
+                    <div class="details">
+                        <div class="title-price">
+                            <span>Water Hotel</span>
+                            <span>3350 บ./คืน</span>
+                        </div>
+                        <p class="stars">★★★★★</p>
+                        <p class="review">Lasted Review</p>
+                        <p class="review">From.. Email <br> Good and Nice</p>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerbutton">
+            <a href="#">Explore</a>
+            <a href="#">Design</a>
+            <a href="#">Resource</a>
+            <a href="#">Blog</a>
+        </div>
+    </footer>
+</body>
+
+</html>
