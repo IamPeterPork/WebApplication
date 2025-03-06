@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbutton {
+            color: white;
+            background-color: transparent;
+            border: none;
+            margin-right: 15px;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            background-color: rgb(18, 73, 110);
+            padding: 30px;
+            ;
+        }
+
+        main {
+            display: block;
+            height: 75vh;
+            background-image: url(https://www.shutterstock.com/image-photo/white-passenger-airplane-flying-sky-600nw-2331577059.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .details, .picture {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+
+
+            height: 425 px;
+        }
+
+        .details {
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .picture{
+            background-image: url(https://pix10.agoda.net/hotelImages/4363456/-1/a71d6ad4d29b2527b9bb824c6116cdf9.jpg?ca=12&ce=1&s=414x232);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .title-price {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        #book {
+            padding: 15px 40px;
+            margin-bottom: 15px;
+            background-color: rgb(58, 62, 66);
+            color: aliceblue;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+        }
+
+        #stars {
+            color: gold;
+            font-size: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .alterpic-container{
+            display: flex;
+            gap: 20px;
+        }
+
+        .alter{
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            width: 100px;
+            margin: 10px 15px;
+            cursor: pointer;
+        }
+
+        .review-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px
+        }
+
+        .review{
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            width: 100px;
+        }
+        
+        footer {
+            background-color: rgb(18, 73, 110);
+            color: white;
+            display: flex;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footerbutton a {
+            justify-content: space-evenly;
+            padding: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbutton">
+            Logo
+        </div>
+        <div>
+            <a href="#" class="navbutton">Menu</a>
+            <a href="#" class="navbutton">Promotion</a>
+            <a href="#" class="navbutton">Contact</a>
+            <a href="#" class="navbutton">Welcome, Name</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="picture">
+                <!-- <img src="https://pix10.agoda.net/hotelImages/4363456/-1/a71d6ad4d29b2527b9bb824c6116cdf9.jpg?ca=12&ce=1&s=414x232"
+                    alt="Narra Hotel"> -->
+            </div>
+            <div class="details">
+                <div class="title-price">
+                    <h2>NARRA Hotel</h2>
+                    <h2>ราคา 1540 บ./คืน</h2>
+                </div>
+                <p>features: <br></p>
+                <p>ห้องขนาด 4 ตารางเมตร <br></p>
+                <p>2 เตียง <br></p>
+                <p>1 ตู้เย็น <br></p>
+                <br>
+                <p>สถานที่ใกล้เคียง: สยามพารากอน, Central World, ประตูน้ำ</p>
+                <p id="stars">★★★★★</p>
+                <button id="book">จอง</button>
+            </div>
+        </div>
+        <div class="alterpic-container">
+            <button class="alter"><img src="https://i.imgflip.com/28pk3e.jpg" alt=""></button>
+            <button class="alter"><img src="https://i.imgflip.com/22ca03.jpg" alt=""></button>
+            <button class="alter"><img src="https://i.imgflip.com/2akpj6.jpg" alt=""></button>
+        </div>
+        <div class="review-container">
+            <div class="review">
+                <p id="stars">★★★★★</p>
+                <h2>Review title <br></h2>
+                <p>review body</p>
+                <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
+                <p>reviewer name</p>
+                <p>date</p>
+            </div>
+            <div class="review">
+                <p id="stars">★★★★★</p>
+                <h2>Review title <br></h2>
+                <p>review body</p>
+                <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
+                <p>reviewer name</p>
+                <p>date</p>
+            </div>
+            <div class="review">
+                <p id="stars">★★★★★</p>
+                <h2>Review title <br></h2>
+                <p>review body</p>
+                <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
+                <p>reviewer name</p>
+                <p>date</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerbutton">
+            <a href="#">Explore</a>
+            <a href="#">Design</a>
+            <a href="#">Resource</a>
+            <a href="#">Blog</a>
+        </div>
+    </footer>
+</body>
+
+</html>
