@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         * {
             margin: 0px;
@@ -31,27 +34,43 @@
             ;
         }
 
-        main {
+        body {
             display: block;
-            height: 75vh;
+            height: auto;
             background-image: url(https://www.shutterstock.com/image-photo/white-passenger-airplane-flying-sky-600nw-2331577059.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+            justify-content: center;
+            align-items: center;
         }
 
-        .container {
+        .container{
             display: flex;
+            justify-content: center;
+            margin: 25px auto;
+            width: fit-content;
+            flex-direction: column;
+        }
+        
+        .container-main {
+            display: flex;
+            justify-content: center;
             gap: 20px;
+            flex-direction: row;
         }
 
-        .details, .picture {
+        .details {
             display: flex;
             flex-direction: column;
-            width: 400px;
-
-
-            height: 425 px;
+            width: 800px;
+            height: 700px;
+        }
+        .picture {
+            display: flex;
+            flex-direction: column;
+            width: 900px;
+            height: 700px;
         }
 
         .details {
@@ -60,7 +79,7 @@
             padding: 20px;
         }
 
-        .picture{
+        .picture {
             background-image: url(https://pix10.agoda.net/hotelImages/4363456/-1/a71d6ad4d29b2527b9bb824c6116cdf9.jpg?ca=12&ce=1&s=414x232);
             background-repeat: no-repeat;
             background-size: cover;
@@ -93,40 +112,46 @@
             text-align: center;
         }
 
-        .alterpic-container{
+        .alterpic-container {
             display: flex;
-            gap: 20px;
+            gap: 5px;
         }
 
-        .alter{
+        .alter {
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            width: 100px;
+            width: 75px;
             margin: 10px 15px;
             cursor: pointer;
         }
-        
+
+        .alter img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .review-container {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             margin: 30px 0;
         }
-        
+
         .review {
             background-color: white;
             border-radius: 20px;
             display: flex;
             flex-direction: column;
-            padding: px;
-            width: 250px; /* Adjust width */
+            padding: 15px;
+            width: 250px;
             height: 200px;
             text-align: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        
-        .review img{
+
+        .review img {
             width: 80px;
             height: 80px;
             border-radius: 50%;
@@ -134,7 +159,7 @@
             margin-top: 10px;
         }
 
-        #stars-review{
+        #stars-review {
             color: gold;
             padding: 5px;
         }
@@ -156,54 +181,58 @@
 
     <main>
         <div class="container">
-            <div class="picture">
-                <!-- <img src="https://pix10.agoda.net/hotelImages/4363456/-1/a71d6ad4d29b2527b9bb824c6116cdf9.jpg?ca=12&ce=1&s=414x232"
-                    alt="Narra Hotel"> -->
-            </div>
-            <div class="details">
-                <div class="title-price">
-                    <h2>NARRA Hotel</h2>
-                    <h2>ราคา 1540 บ./คืน</h2>
+            <div class="container-main">
+                <div class="picture">
+                    <!-- <img src="https://pix10.agoda.net/hotelImages/4363456/-1/a71d6ad4d29b2527b9bb824c6116cdf9.jpg?ca=12&ce=1&s=414x232"
+                        alt="Narra Hotel"> -->
                 </div>
-                <p>features: <br></p>
-                <p>ห้องขนาด 4 ตารางเมตร <br></p>
-                <p>2 เตียง <br></p>
-                <p>1 ตู้เย็น <br></p>
-                <br>
-                <p>สถานที่ใกล้เคียง: สยามพารากอน, Central World, ประตูน้ำ</p>
-                <p id="stars">★★★★★</p>
-                <button id="book">จอง</button>
+                <div class="details">
+                    <div class="title-price">
+                        <h2>NARRA Hotel</h2>
+                        <h2>ราคา 1540 บ./คืน</h2>
+                    </div>
+                    <p>features: <br></p>
+                    <p>ห้องขนาด 4 ตารางเมตร <br></p>
+                    <p>2 เตียง <br></p>
+                    <p>1 ตู้เย็น <br></p>
+                    <br>
+                    <p>สถานที่ใกล้เคียง: สยามพารากอน, Central World, ประตูน้ำ</p>
+                    <p id="stars">★★★★★</p>
+                    <button id="book">จอง</button>
+                </div>
             </div>
-        </div>
-        <div class="alterpic-container">
-            <button class="alter"><img src="https://i.imgflip.com/28pk3e.jpg" alt=""></button>
-            <button class="alter"><img src="https://i.imgflip.com/22ca03.jpg" alt=""></button>
-            <button class="alter"><img src="https://i.imgflip.com/2akpj6.jpg" alt=""></button>
-        </div>
-        <div class="review-container">
-            <div class="review">
-                <p id="stars-review">★★★★★</p>
-                <h2>Review title <br></h2>
-                <p>review body</p>
-                <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
-                <p>reviewer name</p>
-                <p>date</p>
+
+            <div class="alterpic-container">
+                <button class="alter"><img src="https://i.imgflip.com/28pk3e.jpg"></button>
+                <button class="alter"><img src="https://i.imgflip.com/22ca03.jpg"></button>
+                <button class="alter"><img src="https://i.imgflip.com/2akpj6.jpg"></button>
             </div>
-            <div class="review">
-                <p id="stars-review">★★★★★</p>
-                <h2>Review title <br></h2>
-                <p>review body</p>
-                <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
-                <p>reviewer name</p>
-                <p>date</p>
-            </div>
-            <div class="review">
-                <p id="stars-review">★★★★★</p>
-                <h2>Review title <br></h2>
-                <p>review body</p>
-                <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
-                <p>reviewer name</p>
-                <p>date</p>
+
+            <div class="review-container">
+                <div class="review">
+                    <p id="stars-review">★★★★★</p>
+                    <h2>Review title <br></h2>
+                    <p>review body</p>
+                    <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
+                    <p>reviewer name</p>
+                    <p>date</p>
+                </div>
+                <div class="review">
+                    <p id="stars-review">★★★★★</p>
+                    <h2>Review title <br></h2>
+                    <p>review body</p>
+                    <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
+                    <p>reviewer name</p>
+                    <p>date</p>
+                </div>
+                <div class="review">
+                    <p id="stars-review">★★★★★</p>
+                    <h2>Review title <br></h2>
+                    <p>review body</p>
+                    <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
+                    <p>reviewer name</p>
+                    <p>date</p>
+                </div>
             </div>
         </div>
     </main>
