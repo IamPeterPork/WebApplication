@@ -45,14 +45,14 @@
             align-items: center;
         }
 
-        .container{
+        .container {
             display: flex;
             justify-content: center;
             margin: 25px auto;
             width: fit-content;
             flex-direction: column;
         }
-        
+
         .container-main {
             display: flex;
             justify-content: center;
@@ -66,6 +66,7 @@
             width: 800px;
             height: 700px;
         }
+
         .picture {
             display: flex;
             flex-direction: column;
@@ -126,7 +127,7 @@
             cursor: pointer;
         }
 
-        .alter img{
+        .alter img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -146,17 +147,50 @@
             flex-direction: column;
             padding: 15px;
             width: 250px;
-            height: 200px;
-            text-align: center;
+            height: auto;
+            text-align: left;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .review img {
-            width: 80px;
-            height: 80px;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
             border-radius: 50%;
             object-fit: cover;
+        }
+
+        .review .reviewr-info {
+            display: flex;
+            align-items: center;
             margin-top: 10px;
+        }
+
+        .review .reviewer-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review .reviewer-details p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .review .stars-review {
+            color: gold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .review .review-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .review .review-body {
+            font-size: 14px;
+            margin-bottom: 10px;
         }
 
         #stars-review {
@@ -182,10 +216,7 @@
     <main>
         <div class="container">
             <div class="container-main">
-                <div class="picture">
-                    <!-- <img src="https://pix10.agoda.net/hotelImages/4363456/-1/a71d6ad4d29b2527b9bb824c6116cdf9.jpg?ca=12&ce=1&s=414x232"
-                        alt="Narra Hotel"> -->
-                </div>
+                <div class="picture"></div>
                 <div class="details">
                     <div class="title-price">
                         <h2>NARRA Hotel</h2>
@@ -210,28 +241,40 @@
 
             <div class="review-container">
                 <div class="review">
-                    <p id="stars-review">★★★★★</p>
-                    <h2>Review title <br></h2>
-                    <p>review body</p>
-                    <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
-                    <p>reviewer name</p>
-                    <p>date</p>
+                    <div class="stars-review">★★★★★</div>
+                    <h2 class="review-title">Review title</h2>
+                    <p class="review-body">review body</p>
+                    <div class="reviewer-info">
+                        <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
+                        <div class="reviewer-details">
+                            <p>reviewer name</p>
+                            <p>date</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="review">
-                    <p id="stars-review">★★★★★</p>
-                    <h2>Review title <br></h2>
-                    <p>review body</p>
-                    <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
-                    <p>reviewer name</p>
-                    <p>date</p>
+                    <div class="stars-review">★★★★★</div>
+                    <h2 class="review-title">Review title</h2>
+                    <p class="review-body">review body</p>
+                    <div class="reviewer-info">
+                        <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
+                        <div class="reviewer-details">
+                            <p>reviewer name</p>
+                            <p>date</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="review">
-                    <p id="stars-review">★★★★★</p>
-                    <h2>Review title <br></h2>
-                    <p>review body</p>
-                    <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
-                    <p>reviewer name</p>
-                    <p>date</p>
+                    <div class="stars-review">★★★★★</div>
+                    <h2 class="review-title">Review title</h2>
+                    <p class="review-body">review body</p>
+                    <div class="reviewer-info">
+                        <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" alt="">
+                        <div class="reviewer-details">
+                            <p>reviewer name</p>
+                            <p>date</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
